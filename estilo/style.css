@@ -101,7 +101,7 @@ body {
 }
 
 #switch > button:hover {
-    outline: 5px solid var(--highlight-color);
+    outline: 3px solid var(--highlight-color);
 }
 
 #switch > span {
@@ -167,7 +167,7 @@ i {
 input, button {
     width: calc(100% - 22px);
     cursor: pointer;
-    border: 1px inset var(--cor7);
+    border: 1px outset var(--cor7);
     border-radius: 8px;
     padding: 4px;
     outline: none;
@@ -197,7 +197,7 @@ input[type=submit] {
     font-size: 1.0em;
     text-transform: uppercase;
     margin-top: 18px;
-    border: 1px inset var(--cor4);
+    border: 1px outset var(--cor4);
 }
 
 input[type=submit]:hover {
@@ -211,7 +211,7 @@ input[type=submit]:hover {
     font-size: .8em;
     text-transform: uppercase;
     margin-top: 10px;
-    border: 1px inset var(--cor5);
+    border: 1px outset var(--cor5);
     cursor: pointer;
 }
 
