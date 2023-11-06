@@ -15,6 +15,50 @@
     --cor5: #D9A23D;
     --cor6: #F2B872;
     --cor7: #F2C299;
+
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.178);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --icon: url('../favicon/light_mode.png');
+    --background: url('../imagens/light_mode.jpg');
+}
+
+.light {
+    --cor1: #000000;
+    --cor2: #ffffff;
+    --cor3: #1B0273;
+    --cor4: #3F0FA6;
+    --cor5: #690DA6;
+    --cor6: #9591F2;
+    --cor7: #b29dcc;
+    
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.103);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --icon: url('../favicon/dark_mode.png');
+    --background: url('../imagens/dark_mode.jpg');
+}
+
+@keyframes slide-in {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: 50%;
+    }
+}
+  
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
 }
 
 /* main */
@@ -22,8 +66,53 @@
 body {
     height: 100%;
     width: 100%;
-    background: var(--cor2) url('../imagens/login.jpg') no-repeat fixed 100% 100%;
+    background: var(--cor2) var(--background) no-repeat fixed 100% 100%;
     background-size: cover;
+}
+
+/*  botao */
+
+#switch {
+    position: relative;
+    width: 70px;
+    height: 22px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#switch > button {
+    width: 32px;
+    height: 32px;
+    background: white var(--icon) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    animation: slide-back 0.3s;
+}
+
+.light #switch > button {
+    animation: slide-in 0.3s forwards;
+}
+
+#switch > button:hover {
+    outline: 5px solid var(--highlight-color);
+}
+
+#switch > span {
+    display: block;
+    width: 60px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px) ;
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9px;
 }
 
 /* formulario */
@@ -111,12 +200,12 @@ input[type=submit] {
     border: 1px inset var(--cor4);
 }
 
-input[type=submit]:hover, button:hover{
+input[type=submit]:hover {
     color: var(--cor2);
     background-color: var(--cor5);
 }
 
-button {
+#esqueci {
     color: var(--cor2);
     background-color: var(--cor4);
     font-size: .8em;
@@ -124,6 +213,13 @@ button {
     margin-top: 10px;
     border: 1px inset var(--cor5);
     cursor: pointer;
+}
+
+
+#esqueci:hover {
+    font-weight: 600;
+    color: var(--cor1);
+    background-color: var(--cor6);
 }
 
 #text {

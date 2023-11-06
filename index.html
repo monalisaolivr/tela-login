@@ -11,6 +11,11 @@
 </head>
 <body>
     <main>
+        <div id="switch"  onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
+
         <section id="login">
             <div id="formulario">
                 <h1>Login</h1>
@@ -28,21 +33,17 @@
                         <label for="isenha">Senha</label>
                         <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required max="20" min="8">
                     </div>
-                    
-                    <div id="botao">
-                        <a href="enter.html"><input type="submit" value="Entrar"></a>
-                    </div>
+                
+                    <a href="enter.html">
+                        <input type="submit" value="Entrar">
+                    </a>
 
-                    <button onclick="myFunction()">Esqueci a senha</button>
+                    <button onclick="myFunction()" id="esqueci">Esqueci a senha</button>
                     <p id="text"></p>
                 </form>
             </div>
         </section>
     </main>
-    <script>
-        function myFunction() {
-            document.getElementById("text").innerHTML = "Eu também não sei sua senha &#128531";
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
