@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+/* mudar o px para vh e vw em todos os width e heigth, para acompanhar a tela quando ela estiver pequena e deixar o botao estatico em mobile */
+
 :root {
     --cor1: #000000;
     --cor2: #ffffff;
@@ -111,8 +113,7 @@ body {
     height: 24px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
-    backdrop-filter: blur(4px) ;
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     border-radius: 9px;
 }
 
