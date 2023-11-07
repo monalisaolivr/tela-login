@@ -102,7 +102,7 @@ body {
 }
 
 #switch > button:hover {
-    outline: 3px solid var(--highlight-color);
+    border: 3px solid var(--highlight-color);
 }
 
 #switch > span {
