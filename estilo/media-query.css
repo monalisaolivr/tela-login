@@ -20,6 +20,10 @@ Grandes telas: acima de 1200px
         padding: 12px 0px;
     }
 
+    #switch {
+        margin-top: 50px;
+    }
+
 }
 
 @media screen and (min-width:992px){
@@ -32,4 +36,7 @@ Grandes telas: acima de 1200px
         padding: 30px 0px;
     }
 
+    #switch {
+        margin-top: 50px;
+    }
 }
