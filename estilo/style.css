@@ -190,7 +190,7 @@ input:focus-within {
 
 /* entrar e esqueci */
 
-input[type=submit] {
+input[type=button] {
     color: var(--cor4);
     background-color: rgba(255, 255, 255, 0.500);
     font-weight: 500;
@@ -201,7 +201,7 @@ input[type=submit] {
     transition: background-color 0.3s, color 0.3s;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     color: var(--cor2);
     background-color: var(--cor5);
 }
