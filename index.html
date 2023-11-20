@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 </head>
 <body>
     <main>
@@ -19,7 +19,7 @@
             <div id="formulario">
                 <h1>Login</h1>
 
-                <form action="enter.html" method="post" autocomplete="on">
+                <form method="post" autocomplete="on">
                     
                     <div class="input">
                         <i class="material-symbols-outlined">person</i>
@@ -30,7 +30,7 @@
                     <div class="input">
                         <i class="material-symbols-outlined">key</i>
                         <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required max="20" min="8">
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required maxlength="20" minlength="8">
                     </div>
                 
                     <a href="enter.html">
